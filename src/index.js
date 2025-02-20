@@ -1,9 +1,10 @@
 const ldap = require("ldapjs");
 const path = require("path");
 const fs = require("fs");
+require("dotenv").config();
 
-const USERS_FILE = path.join(__dirname, "users.json");
-const PORT = 3899;
+const USERS_FILE = path.join(__dirname, process.env.USERS_FILE);
+const PORT = parseInt(process.env.PORT ?? "3899");
 
 function readUsers() {
   if (!fs.existsSync(USERS_FILE)) {
