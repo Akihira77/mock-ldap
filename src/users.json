@@ -1,0 +1,16 @@
+[
+  {
+    "dn": "cn=berca001,ou=users,dc=KPPMINING,dc=NET",
+    "attributes": {
+      "uid": "berca001",
+      "userPassword": "001berca"
+    }
+  },
+  {
+    "dn": "cn=admin,ou=users,dc=KPPMINING,dc=NET",
+    "attributes": {
+      "uid": "admin",
+      "userPassword": "rahasia123!"
+    }
+  }
+]
